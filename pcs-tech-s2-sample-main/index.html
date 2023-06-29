@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+        <script lang="javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="login">
+            <center><img style="padding: 20px;" alt="Portnov School" src="https://www.portnov.com/wp-content/uploads//2021/09/portnov-logo-svg.svg"/></center>
+            <h3 class="login_header">Learning system</h3>
+            <div style="width:300px;margin-left: auto;margin-right: auto;">
+                <table>
+                    <tr>
+                        <td>
+                            <lable for="login">Login:</lable>
+                        </td>
+                        <td>
+                            <input type="text" name="login" id="login">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <lable for="password">Password:</lable>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="password">
+                        </td>
+                    </tr>
+                </table>
+                <input class="btn btn-success" type="button" value="Login" id="login_btn" name="login_btn" onclick="auth(document.getElementById('login').value, document.getElementById('password').value)">
+            </div>
+        </div>
+        <div id="result">
+        </div>
+        <style>
+            p {
+                font-size: 12px; 
+                color: brown;
+            }
+        </style>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+body {
+    background-color: lightgray;
+}
+
+.login {
+    margin: auto;
+    margin-top: 50px;
+    width: 15cm;
+    border: 1px solid #ff5100;
+    padding: 20px;
+}
+
+.login_header {
+    text-align: center;
+}
+
+#login_btn {
+    margin-top: 20px;
+    width: 100%;
+    background-color: lightgrey;
+    border-color: black;
+}
+
+#result {
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+    text-align: center;
+}

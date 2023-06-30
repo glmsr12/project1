@@ -11,11 +11,17 @@
     <div style="background-color: aquamarine">
       <h3>This is our title</h3>
       <div style="background-color: rgb(185, 118, 185)">
-        <h4>Second header in a nested div</h4>
+        <h4 id="header4">Second header in a nested div</h4>
       </div>
       <h3>
         <span style="font-size: 2rem">Third</span> header in the parent div
       </h3>
     </div>
+    <button onclick="changeText()">Change the text</button>
+    <script>
+      function changeText() {
+        document.getElementById('header4').innerHTML = 'Here you go!';
+      }
+    </script>
   </body>
 </html>

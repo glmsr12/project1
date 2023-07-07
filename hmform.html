@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Html Form Homework</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
+    <script>
+      function validateForm() {
+        var firstName = document.forms['myForm']['firstName'].value;
+        var lastName = document.forms['myForm']['lastName'].value;
+        var birthdate = document.forms['myForm']['birthdate'].value;
+        var numCars = document.forms['myForm']['numCars'].value;
+        var password = document.forms['myForm']['password'].value;
+
+        if (firstName.length < 2 || firstName.length > 25) {
+          alert('First name must be between 2 and 25 characters long.');
+          return false;
+        }
+
+        if (lastName.length < 2 || lastName.length > 25) {
+          alert('Last name must be between 2 and 25 characters long.');
+          return false;
+        }
+
+        if (birthdate === '') {
+          alert('Please enter your birthdate.');
+          return false;
+        }
+
+        if (isNaN(numCars)) {
+          alert('Number of cars must be a valid number.');
+          return false;
+        }
+
+        if (password === '') {
+          alert('Please enter a password.');
+          return false;
+        }
+
+        if (!document.getElementById('agreement').checked) {
+          alert('Please agree to the terms and conditions.');
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Form Validation Example</h1>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+      <label for="firstName">First name:</label>
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        required
+        minlength="2"
+        maxlength="25"
+      /><br />
+
+      <label for="lastName">Last name:</label>
+      <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        required
+        minlength="2"
+        maxlength="25"
+      /><br />
+
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required /><br />
+
+      <label for="numCars">Number of cars:</label>
+      <input type="number" id="numCars" name="numCars" /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /><br />
+
+      <label for="agreement">
+        <input
+          type="checkbox"
+          id="agreement"
+          name="agreement"
+          checked
+          disabled
+        />
+        I agree to the terms and conditions </label
+      ><br />
+
+      <input type="submit" value="Send info" />
+    </form>
+  </body>
+</html>

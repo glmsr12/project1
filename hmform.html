@@ -32,12 +32,11 @@
 
       input[type='text'],
       input[type='date'],
-      input[type='number'],
       input[type='password'],
       input[type='submit'] {
         width: 100%;
         padding: 15px;
-        border-radius: 5px;
+        border-radius: 7px;
         border: 1px solid rgb(186, 180, 180);
       }
 
@@ -45,10 +44,11 @@
         background-color: #4caf50;
         color: white;
         cursor: pointer;
+        font-size: 1.2rem;
       }
 
       input[type='submit']:hover {
-        background-color: #45a049;
+        background-color: #336836;
       }
     </style>
   </head>
@@ -79,7 +79,14 @@
         <input type="date" id="birthdate" name="birthdate" required />
 
         <label for="numCars">Number of cars:</label>
-        <input type="number" id="numCars" name="numCars" />
+        <select id="numCars" name="numCars">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required />

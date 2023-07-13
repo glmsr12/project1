@@ -13,7 +13,7 @@ body {
 
 .header {
   font-size: 2.4rem;
-  color: rgb(88, 12, 160);
+  color: #580c96;
 }
 
 article {
@@ -21,7 +21,6 @@ article {
   padding: 30px;
   margin-top: 20px;
   background-color: rgb(249, 235, 235);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -32,8 +31,9 @@ article {
 img {
   max-width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 p {
@@ -44,7 +44,34 @@ p {
 .par2 {
   margin-bottom: 40px;
 }
+.img2 {
+  border: 2px solid rgb(184, 37, 201);
+}
 
 #par3 {
   margin-top: 40px;
+}
+span {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  article {
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .postitle {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
 }

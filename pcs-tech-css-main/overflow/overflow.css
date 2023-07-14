@@ -1,0 +1,24 @@
+div {
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+}
+
+.div-visible {
+    overflow: visible;
+}
+
+.div-hidden {
+    overflow: hidden;
+}
+
+.div-scroll {
+    overflow: scroll;
+}
+
+.div-overflow {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+

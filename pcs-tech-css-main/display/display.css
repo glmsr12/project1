@@ -1,8 +1,10 @@
 #hiddenDiv {
-    display:none;
-    width: 400px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: lightgoldenrodyellow;
+  display: none;
+  width: 400px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(133, 218, 189);
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
